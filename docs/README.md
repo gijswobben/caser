@@ -27,3 +27,5 @@ Available styles are:
 - PascalCase
 - camelCase
 - space case
+
+test
