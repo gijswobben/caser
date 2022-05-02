@@ -25,10 +25,10 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Install
         run: pip install .[docs]
-      - name: Build and Commit
-        uses: sphinx-notes/pages@v2
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Build
+        run: cd docs && make html
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          publish_dir: ./docs/_build/html
