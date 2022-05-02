@@ -20,6 +20,7 @@ docs_requirements: List[str] = [
     "sphinx~=4.5.0",
     "myst-parser==0.17.2",
     "sphinxcontrib-napoleon==0.7",
+    "sphinx-material==0.0.35",
 ]
 
 setup(
