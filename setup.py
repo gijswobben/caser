@@ -1,13 +1,14 @@
 from setuptools import find_packages, setup
+from typing import List
 
 with open("docs/README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 # When installing, these requirements need to be satisfied
-install_requirements: list[str] = []
+install_requirements: List[str] = []
 
 # When installing for development, install these requirements
-dev_requirements: list[str] = [
+dev_requirements: List[str] = [
     "black>=22.3.0",
     "mypy>=0.950",
     "pytest~=7.1.2",
@@ -15,7 +16,7 @@ dev_requirements: list[str] = [
     "pytest-cov~=3.0.0",
 ]
 
-docs_requirements: list[str] = [
+docs_requirements: List[str] = [
     "sphinx~=4.5.0",
     "myst-parser==0.17.2",
 ]
