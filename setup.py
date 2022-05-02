@@ -19,6 +19,7 @@ dev_requirements: List[str] = [
 docs_requirements: List[str] = [
     "sphinx~=4.5.0",
     "myst-parser==0.17.2",
+    "sphinxcontrib-napoleon==0.7",
 ]
 
 setup(
